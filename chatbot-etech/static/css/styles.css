@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Adicionando cor de background */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #010141;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .logo-container
+  {
+    width: 100%;
+    text-align: center;
+    display:flex;
+    
+  }
+
+  .space{
+    width: 30%;
+  }
+  .logo-container p{
+    text-align: center;
+  }
+
+  .logo-container div{
+    align-content: space-between;
+  }
+
+  .sign {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  .sign a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #loading {
+    font-size: 50px;
+  }
+
+  /* Estilo do chatbot */
+  .chat-box {
+    margin: auto;
+    width: 600px;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: calc(130vh - 300px);
+    height: calc(130vh - 300px);
+    
+  }
+
+  .sign {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Estilo do cabeçalho */
+  .chat-box-header {
+    display: flex;
+    background-color: rgba(9,87,66);
+    color: #ffffff;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  /* Estilo do corpo do chatbot */
+  .chat-box-body {
+    padding: 16px;
+    overflow-y: auto;
+    height: calc(100% - 190px);
+  }
+  
+  /* Estilo do chat de mensagens */
+  .chat-box-body .message,
+  .chat-box-body .response {
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+  
+  /* Estilo do chat do usuário */
+  .chat-box-body .message {
+    background-color: rgba(33,37,41);
+    box-shadow: rgba(220, 250, 24, 0.5)  4px 4px;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+    width: 80%;
+  }
+  .flex{
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Estilo das resposta do chatGPT */
+  .chat-box-body .response {
+    background-color: rgba(220, 250, 24);
+    box-shadow: rgba(33,37,41, 0.5) -4px 4px;
+    color: black;
+    text-align: justify;
+    width: 80%;
+  }
+  
+  /* Estilo do rodapé do Chat */
+  .chat-box-footer {
+    background-color: rgba(9,87,66);
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e6e6e6;
+    padding: 8px 16px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  /* Style the input field */   
+  .chat-box-footer input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Estilo do botão*/
+  .chat-box-footer button {
+    margin-left: 8px;
+    padding: 8px 16px;
+    background-color: rgba(220, 250, 24);
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Adicionando estilos de hover */
+  .chat-box-footer button:hover {
+    background-color: #0073e6;
+  }
+  
+  .chat-box-footer button:active {
+    background-color: #005bbf;
+  }
+  
+  /* Estilo de media query */
+  @media (max-width: 500px) {
+    
+    .chat-box-body .response {
+        background-color: rgba(220, 250, 24 );
+        box-shadow: rgba(33,37,41, 0.5) -4px 4px;
+        color: black;
+        text-align: justify;
+        width: 70%;
+      }
+
+    .chat-box-body .message {
+        background-color: rgba(33,37,41);
+        box-shadow: rgba(220, 250, 24, 0.5)  4px 4px;
+        color: white;
+        align-self: flex-end;
+        text-align: right;
+        width: 70%;
+      }
+  }
